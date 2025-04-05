@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock de Productos</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
 </head>
-
 <body>
-    <header>
-        <h1>Simulador de Clima</h1>
-    </header>
-    <main>
-        <p>Este simulador permite ingresar una temperatura y una condición climática para recibir una recomendación
-            sobre
-            qué ropa usar.</p>
-    </main>
-    <script src="./JS/app.js"></script>
-</body>
+  <header>
+    <h1>Gestión de Stock</h1>
+  </header>
 
+  <main>
+    <section class="formulario">
+      <h2>Agregar producto</h2>
+      <form id="formulario-producto">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required />
+        <input type="number" id="precio" placeholder="Precio" required />
+        <input type="number" id="cantidad" placeholder="Cantidad" required />
+        <button type="submit">Agregar producto</button>
+      </form>
+    </section>
+
+    <section class="lista" id="lista-productos">
+      <!-- Los productos aparecerán aquí -->
+    </section>
+    <section class="carrito">
+        <h2>Carrito de compras</h2>
+        <div id="carrito-contenido">
+          <!-- Productos en el carrito se mostrarán aquí -->
+        </div>
+        <h3 id="total-carrito">Total: $0</h3>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Proyecto Coder</p>
+  </footer>
+
+  <script src="JS/app.js"></script>
+</body>
 </html>
