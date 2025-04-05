@@ -1,58 +1,100 @@
+/* Fuente moderna y base */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e6f0ff);
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    color: #333;
   }
   
-  h1, h2 {
+  /* Encabezado */
+  header {
+    background-color: #2a3f54;
+    color: white;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
-  #formulario {
-    max-width: 400px;
-    margin: 20px auto;
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Contenedor principal */
+  main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Secciones del contenido */
+  section {
     background-color: white;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
   }
   
-  input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
+  h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2a3f54;
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1 1 180px;
+    font-size: 1rem;
   }
   
   button {
-    padding: 10px 15px;
-    background-color: #007bff;
+    padding: 10px 20px;
+    background-color: #4a90e2;
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #357ABD;
   }
   
-  #productos, #carrito {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+  /* Listas de productos y carrito */
+  #lista-productos, #carrito {
+    margin-top: 15px;
   }
   
   .producto, .carrito-item {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     padding: 10px 0;
   }
   
   .producto:last-child, .carrito-item:last-child {
     border-bottom: none;
   }
- footer{
-    height: max-content;
-    display: flex;
-    background-color: beige;
- }
+  
+  strong {
+    color: #1a5276;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
